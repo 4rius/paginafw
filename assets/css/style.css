@@ -2,6 +2,10 @@ html, body {
     text-align: center;
 }
 
+body {
+    background-color: slategrey;
+}
+
 h1 {
     font-family: Impact, sans-serif;
     font-weight: 100;
