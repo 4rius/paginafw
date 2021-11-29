@@ -1,0 +1,13 @@
+html, body {
+    text-align: center;
+}
+
+h1 {
+    font-family: Impact, sans-serif;
+    font-weight: 100;
+    color: aqua;
+}
+
+h1:hover {
+    color: red;
+}
