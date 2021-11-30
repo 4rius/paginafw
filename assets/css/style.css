@@ -4,7 +4,9 @@ body {
 }
 
 body {
-    background-color: rgb(69, 69, 69);
+    background-image: url(/assets/images/RestauranteBG4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .neon {
