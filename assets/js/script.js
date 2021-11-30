@@ -1,0 +1,10 @@
+$(function(){
+    $('.neon').neonText({
+        textColor:'white',
+		textSize:'75pt',
+		neonHighlight:'white',
+		neonHighlightColor:'aqua',
+		neonHighlightHover:'blue',
+		neonFontHover:'white'
+      });
+});

@@ -3,15 +3,17 @@ html, body {
 }
 
 body {
-    background-color: slategrey;
+    background-color: rgb(69, 69, 69);
 }
 
-h1 {
-    font-family: Impact, sans-serif;
-    font-weight: 100;
-    color: aqua;
+.neon {
+    padding-top: 40px;
+    padding-bottom: 25px; /*Edita esto si se pega mucho el carrousel*/
+    font-family: Comic Sans MS, sans-serif;
+    transition: text-shadow 0.5s ease 0s;
+    border-radius: 10px;
 }
 
-h1:hover {
-    color: red;
+.nav-pills .nav-link.active {
+    background-color: #dd4646;
 }
