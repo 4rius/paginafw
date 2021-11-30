@@ -14,6 +14,7 @@ body {
         opacity: 0;
     }
 }
+
 .neon {
     padding-top: 40px;
     padding-bottom: 25px;
@@ -79,4 +80,27 @@ body {
 
 .comollegar {
     padding-top: 30px;
+}
+
+p.card-text {
+    color: white;
+    font-size: 24px;
+}
+
+.card {
+    border: black;
+    background-color: black;
+}
+
+.card-title {
+    color: white;
+    font-size: 30px;
+}
+
+.carousel-control-prev {
+    left: -100px;
+}
+
+.carousel-control-next {
+    right: -100px;
 }
