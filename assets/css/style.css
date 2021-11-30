@@ -9,6 +9,11 @@ body {
     background-attachment: fixed;
 }
 
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
 .neon {
     padding-top: 40px;
     padding-bottom: 25px;
@@ -22,6 +27,10 @@ body {
     justify-content: center;
 }
 
+.tab-pane {
+    color: white;
+}
+
 .nav-pills .nav-link.active {
     background-color: #dd4646;
 }
@@ -30,4 +39,44 @@ body {
     color: white;
 }
 
+.accordion {
+    padding-top: 15px;
+}
 
+.accordion-body {
+    font-family: Tahoma;
+    font-size: 25px;
+    color: white;
+    background-color: black;
+    justify-content: center;
+}
+
+.accordion-item {
+    border: 1px solid black;
+}
+
+.accordion-button {
+    font-family: Tahoma;
+    font-size: 30px;
+    color: white;
+    background: black;
+}
+
+.accordion-button:not(.collapsed) {
+    color: inherit;
+    background: rgb(17, 17, 17);
+    color: white;
+}
+
+.interior1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.price {
+    color: springgreen;
+}
+
+.comollegar {
+    padding-top: 30px;
+}
