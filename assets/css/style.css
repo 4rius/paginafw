@@ -29,3 +29,11 @@ body {
 .carousel-item p {
     color: white;
 }
+
+.accordion-item {
+    color: black;
+}
+
+.accordion-body {
+    color: white;
+}
