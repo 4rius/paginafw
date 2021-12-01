@@ -1,12 +1,15 @@
 html,
 body {
     text-align: center;
+    height: 100%;
 }
 
 body {
-    background-image: url(/assets/images/RestauranteBG4.jpg);
+    background-image: url(/assets/images/bg2.jpg);
     background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @keyframes blinker {
@@ -52,10 +55,16 @@ body {
     justify-content: center;
 }
 
+.accordion-button {
+    text-transform: uppercase;
+    text-align: center;
+    display:block;
+}
+
 /*Borde del acordeón negro */
 
 .accordion-item {
-    border: 1px solid black;
+    border: 1px solid rgb(17, 17, 17);
 }
 
 /*Acordeón plegado negro */
@@ -112,7 +121,7 @@ p.card-text {
 }
 
 .rating {
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 /* Valoraciones en oscuro */
@@ -135,7 +144,7 @@ p.card-text {
 /*Estilo de las valoraciones */
 
 .dias {
-    color: slategrey;
+    color: rgb(199, 199, 199);
     font-style: italic;
     font-family: serif;
 }
@@ -144,3 +153,59 @@ p.card-text {
     font-family: Tahoma;
     font-style: italic;
 }
+
+/* Salir del modal centrado */
+
+.modal-footer {
+    justify-content: center;
+}
+
+/* Estilo de las valoraciones de los platos */
+
+.valoraciones {
+    color: white;
+}
+
+.modal-title {
+    color: white;
+    font-weight: 700;
+}
+
+.modal-content {
+    background-color: black;
+}
+
+p.dias {
+    font-size: 12px;
+}
+
+h1 {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-transform: uppercase;
+    color: snow;
+    font-size: 80px;
+    font-weight: 800;
+}
+
+.anim {
+    -moz-transition: color 2s;
+    transition: color 1s;
+}
+
+h1:hover {
+    color: red;
+}
+
+/* Que el header 1 sea responsive */
+
+@media (min-width: 1200px) {
+    h1 {
+      font-size: 80px;
+    }
+  }
+  @media (max-width: 1199px) {
+    h1 {
+      font-size: 50px;
+    }
+  }
