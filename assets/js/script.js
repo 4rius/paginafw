@@ -8,3 +8,12 @@ $(function() {
         neonFontHover: 'white'
     });
 });
+
+$(function () {
+    $("#rating").rateYo({
+      rating: 4.7,
+      spacing: '5px',
+      ratedFill: 'springgreen',
+      readOnly: true
+    });
+  });
