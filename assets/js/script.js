@@ -16,4 +16,22 @@ $(function () {
       ratedFill: 'springgreen',
       readOnly: true
     });
+    $("#rating1").rateYo({
+        rating: 5,
+        spacing: '5px',
+        ratedFill: 'green',
+        readOnly: true
+      });
+      $("#rating2").rateYo({
+        rating: 4,
+        spacing: '5px',
+        ratedFill: 'green',
+        readOnly: true
+      });
+      $("#rating3").rateYo({
+        rating: 4.5,
+        spacing: '5px',
+        ratedFill: 'green',
+        readOnly: true
+      });
   });

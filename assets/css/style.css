@@ -131,3 +131,16 @@ p.card-text {
     background-color: rgb(41, 41, 41);
     border: 1px solid black;
 }
+
+/*Estilo de las valoraciones */
+
+.dias {
+    color: slategrey;
+    font-style: italic;
+    font-family: serif;
+}
+
+.res {
+    font-family: Tahoma;
+    font-style: italic;
+}
