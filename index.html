@@ -23,26 +23,32 @@
         <!-- Cuando que haya que hacer lo de las estrellas de las valoraciones <script src="/assets/js/jquery.rateyo.js"></script> -->
 
 
-<!--Carrousel 1-->
-        <div id="carouselExampleControls" class="carousel  slide" data-ride="carousel" data-bs-interval="false">
+        <!--Carrousel 1-->
+        <div id="carouselExampleControls" class="carousel   slide" data-ride="carousel" data-bs-interval="false">
             <div class="carousel-inner">
                 <!--En cada div metemos una carta de esas que tu dices y ya estaria, el movimiento funciona-->
                 <div class="carousel-item active">
                     <div class="container-sm">
                         <!--Carta del carousel 1-->
-                        <div class="card mb-3">
+                        <div class="card1 mb-3">
                             <div class="row g-0 ">
-                                <div class="col-md-4 ">
-                                    <img src="assets/images/mititei.jpg" class="img-fluid rounded-start ">
-                                </div>
-                                <!--Mira lo de las flechas porque en formato pequeño no se ven xd-->
                                 <div class="col-md-8 ">
                                     <div class="card-body ">
                                         <h5 class="card-title ">Mititei</h5>
-                                        <p class="card-text ">Plato tradicional de la cocina rumana, consistente en carne picada con forma de rollo que se asa a la parrilla. 
-                                            Esta oferta ofrece una degustación de 4 'mititei' junto a la salsa de mostaza que brindará a tu paladarunos sabores nunca probados.</p>
+                                        <p class="card-text ">Plato tradicional de la cocina rumana, consiste en carne picada con forma de rollo que se asa a la parrilla. Esta oferta ofrece una degustación de 4 'mititei' junto a la salsa de mostaza que brindará a tu paladar
+                                            unos sabores nunca probados</p>
                                         <div class="row">
-                                            <div class="col-md-8">PRECIO</div>
+                                            <hr style="color:white">
+                                            <div class="col-md-8" style="color:white">
+                                                <div class="row  justify-content-center">
+                                                    <p id="t1"></p>
+                                                </div>
+                                                <div class="row  ">
+                                                    <div class="col-md-6 justify-content-end">5,99€</div>
+                                                    <div class="col-md-6"><span class="badge " id="b1" style="background-color: green;">Disponible</span></div>
+                                                </div>
+                                            </div>
+
                                             <div class="col-md-4">
                                                 <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#valoraciones1">
                                                     Ver valoraciones
@@ -51,6 +57,14 @@
                                         </div>
                                     </div>
                                 </div>
+
+
+                                <div class="col-md-4">
+                                    <img src="assets/images/mititei.jpg" class="img-fluid rounded-bottom fotos">
+                                </div>
+
+
+
                             </div>
                         </div>
                     </div>
@@ -59,76 +73,83 @@
 
                     <div class="modal fade" id="valoraciones1" tabindex="-1" aria-labelledby="valoraciones1Label" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-lg modal-fullscreen-sm-down">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="valoraciones1Label">Valoraciones recientes Mititei</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                              <div class="container-sm valoraciones">
-                                  <div class="row">
-                                      <div class="col-md-2">
-                                           <p>Andreas</p>
-                                           <p class="dias">Hace 2 horas</p>
-                                         </div>
-                                      <div class="col-md-6">
-                                           <p class="res"> "Gran sabor a especias con toque salado, muy recomendable." </p>
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="valoraciones1Label">Valoraciones recientes Mititei</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container-sm valoraciones">
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <p>Andreas</p>
+                                                <p class="dias">Hace 2 horas</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="res"> "Gran sabor a especias con toque salado, muy recomendable." </p>
+                                            </div>
+                                            <div class="col-md-4 d-flex justify-content-center">
+                                                <div id="val1"></div>
+                                            </div>
                                         </div>
-                                      <div class="col-md-4 d-flex justify-content-center">
-                                            <div id="val1"></div>
-                                      </div>
-                                  </div>
-                                  <div class="row">
-                                    <div class="col-md-2">
-                                         <p>Anónimo</p>
-                                         <p class="dias">Hace 4 horas</p>
-                                       </div>
-                                    <div class="col-md-6">
-                                         <p class="res"> "No me gustó el primer plato, pero el resto de la carta estaba bien." </p>
-                                      </div>
-                                    <div class="col-md-4 d-flex justify-content-center">
-                                        <div id="val2"></div>
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <p>Anónimo</p>
+                                                <p class="dias">Hace 4 horas</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="res"> "No me gustó el primer plato, pero el resto de la carta estaba bien." </p>
+                                            </div>
+                                            <div class="col-md-4 d-flex justify-content-center">
+                                                <div id="val2"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <p>Ada</p>
+                                                <p class="dias">Hace 1 día</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="res"> "Delicioso" </p>
+                                            </div>
+                                            <div class="col-md-4 d-flex justify-content-center">
+                                                <div id="val3"></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-2">
-                                         <p>Ada</p>
-                                         <p class="dias">Hace 1 día</p>
-                                       </div>
-                                    <div class="col-md-6">
-                                         <p class="res"> "Delicioso" </p>
-                                      </div>
-                                    <div class="col-md-4 d-flex justify-content-center">
-                                        <div id="val3"></div>
-                                    </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volver</button>
                                 </div>
-                              </div>
                             </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volver</button>
-                            </div>
-                          </div>
                         </div>
-                      </div>
-
-                    <!--Carrousel 2-->
-
+                    </div>
                 </div>
+
+                <!--Carrousel 2-->
                 <div class="carousel-item">
                     <div class="container-sm">
                         <!--Carta del carousel 2-->
-                        <div class="card mb-3">
+                        <div class="card2 mb-3">
                             <div class="row g-0 ">
-                                <div class="col-md-4 ">
-                                    <img src="assets/images/mititei.jpg" class="img-fluid rounded-start ">
-                                </div>
+
                                 <div class="col-md-8 ">
                                     <div class="card-body ">
-                                        <h5 class="card-title ">Mititei2</h5>
-                                        <p class="card-text ">Plato tradicional de la cocina rumana, consistente en carne picada con forma de rollo que se asa a la parrilla. Esta oferta ofrece una degustación de 4 'mititei' junto a la salsa de mostaza que brindará a tu paladar
-                                            unos sabores nunca probados</p>
+                                        <h5 class="card-title ">Plato de sarmale</h5>
+                                        <p class="card-text ">Plato tradicional de los balcanes, consiste en carne picada que puede ser de cerdo, ternera o cordero junto con un poco de arroz y trozos pequeños de cebolla trozeada. Todo esto enrollado en hojas de col o repollo,
+                                            ambas disponibles en esta oferta
+                                        </p>
                                         <div class="row">
-                                            <div class="col-md-8">PRECIO</div>
+                                            <hr style="color:white">
+                                            <div class="col-md-8" style="color:white">
+                                                <div class="row  justify-content-center">
+                                                    <p id="t2"></p>
+                                                </div>
+                                                <div class="row  ">
+                                                    <div class="col-md-6 justify-content-end">9,99€</div>
+                                                    <div class="col-md-6"><span class="badge " id="b2" style="background-color: green;">Disponible</span></div>
+                                                </div>
+                                            </div>
                                             <div class="col-md-4">
                                                 <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#valoraciones2">
                                                     Ver valoraciones
@@ -137,6 +158,13 @@
                                         </div>
                                     </div>
                                 </div>
+
+
+                                <div class="col-md-4">
+                                    <img src="assets/images/sarmale.jpg" class="img-fluid rounded-bottom fotos">
+                                </div>
+
+
                             </div>
                         </div>
                     </div>
@@ -146,75 +174,83 @@
 
                 <div class="modal fade" id="valoraciones2" tabindex="-1" aria-labelledby="valoraciones2Label" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg modal-fullscreen-sm-down">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="valoraciones2Label">Valoraciones recientes Sarmale</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="container-sm valoraciones">
-                                <div class="row">
-                                    <div class="col-md-2">
-                                         <p>Víctor</p>
-                                         <p class="dias">Hace 2 días</p>
-                                       </div>
-                                    <div class="col-md-6">
-                                         <p class="res"> "Con el sabor de este plato viajas mentalmente a las montañas de Brasov." </p>
-                                      </div>
-                                    <div class="col-md-4 d-flex justify-content-center">
-                                          <div id="val4"></div>
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="valoraciones2Label">Valoraciones recientes Sarmale</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-sm valoraciones">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <p>Víctor</p>
+                                            <p class="dias">Hace 2 días</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="res"> "Con el sabor de este plato viajas mentalmente a las montañas de Brasov." </p>
+                                        </div>
+                                        <div class="col-md-4 d-flex justify-content-center">
+                                            <div id="val4"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <p>Íker</p>
+                                            <p class="dias">Hace 2 días</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="res"> "Buenísimo, nunca había probado esta cocina y es realmente deliciosa." </p>
+                                        </div>
+                                        <div class="col-md-4 d-flex justify-content-center">
+                                            <div id="val5"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <p>Anónimo</p>
+                                            <p class="dias">Hace 3 días</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="res"> "No me gustó, además era caro" </p>
+                                        </div>
+                                        <div class="col-md-4 d-flex justify-content-center">
+                                            <div id="val6"></div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                  <div class="col-md-2">
-                                       <p>Íker</p>
-                                       <p class="dias">Hace 2 días</p>
-                                     </div>
-                                  <div class="col-md-6">
-                                       <p class="res"> "Buenísimo, nunca había probado esta cocina y es realmente deliciosa." </p>
-                                    </div>
-                                  <div class="col-md-4 d-flex justify-content-center">
-                                      <div id="val5"></div>
-                                  </div>
-                              </div>
-                              <div class="row">
-                                  <div class="col-md-2">
-                                       <p>Anónimo</p>
-                                       <p class="dias">Hace 3 días</p>
-                                     </div>
-                                  <div class="col-md-6">
-                                       <p class="res"> "No me gustó, además era caro" </p>
-                                    </div>
-                                  <div class="col-md-4 d-flex justify-content-center">
-                                      <div id="val6"></div>
-                                  </div>
-                              </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volver</button>
                             </div>
                         </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volver</button>
-                        </div>
-                      </div>
                     </div>
-                  </div>
+                </div>
 
                 <!--Carrousel 3-->
 
                 <div class="carousel-item">
                     <div class="container-sm">
-                        <!--Carta del carousel 4-->
-                        <div class="card mb-3">
+                        <!--Carta del carousel 3-->
+                        <div class="card3 mb-3">
                             <div class="row g-0 ">
-                                <div class="col-md-4 ">
-                                    <img src="assets/images/mititei.jpg" class="img-fluid rounded-start ">
-                                </div>
+
                                 <div class="col-md-8 ">
                                     <div class="card-body ">
-                                        <h5 class="card-title ">Mititei4</h5>
-                                        <p class="card-text ">Plato tradicional de la cocina rumana, consistente en carne picada con forma de rollo que se asa a la parrilla. Esta oferta ofrece una degustación de 4 'mititei' junto a la salsa de mostaza que brindará a tu paladar
-                                            unos sabores nunca probados</p>
+                                        <h5 class="card-title ">Ciorba</h5>
+                                        <p class="card-text ">La especialidad de la casa. Es un plato muy común de Rumaía que consiste en una sopa de verduras con varios condimentos y sazones. Hay varios tipos: Sopa de carne de vaca, caldo de pollo, sopa de tripas y sopa de
+                                            albóndigas. Estas sopas tienen un sabor ácido conseguido con aliño de limón.
+                                        </p>
                                         <div class="row">
-                                            <div class="col-md-8">PRECIO</div>
+                                            <hr style="color:white">
+                                            <div class="col-md-8" style="color:white">
+                                                <div class="row  justify-content-center">
+                                                    <p id="t3"></p>
+                                                </div>
+                                                <div class="row  ">
+                                                    <div class="col-md-6 justify-content-center">6,99€</div>
+                                                    <div class="col-md-6"><span class="badge " id="b3" style="background-color: green;">Disponible</span></div>
+                                                </div>
+                                            </div>
                                             <div class="col-md-4">
                                                 <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#valoraciones3">
                                                     Ver valoraciones
@@ -223,6 +259,68 @@
                                         </div>
                                     </div>
                                 </div>
+
+
+
+
+                                <div class="col-md-4">
+                                    <img src="assets/images/ciorba.jpg" class="img-fluid rounded-bottom fotos">
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="valoraciones3" tabindex="-1" aria-labelledby="valoraciones3Label" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg modal-fullscreen-sm-down">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="valoraciones3Label">Valoraciones recientes Ciorba</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-sm valoraciones">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <p>Anónimo</p>
+                                            <p class="dias">Hace 6 horas</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="res"> "Muy bueno, que pena que termine pronto la oferta porque es impresionante." </p>
+                                        </div>
+                                        <div class="col-md-4 d-flex justify-content-center">
+                                            <div id="val7"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <p>Jorge</p>
+                                            <p class="dias">Hace 1 día</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="res"> "Deliciosas albóndigas con especias, repetiré todas las veces que pueda." </p>
+                                        </div>
+                                        <div class="col-md-4 d-flex justify-content-center">
+                                            <div id="val8"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <p>Joaquín</p>
+                                            <p class="dias">Hace 1 día</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="res"> "Muy bueno, además con el carné universitario tuve un buen descuento." </p>
+                                        </div>
+                                        <div class="col-md-4 d-flex justify-content-center">
+                                            <div id="val9"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volver</button>
                             </div>
                         </div>
                     </div>
@@ -231,59 +329,7 @@
 
             <!--Valoraciones plato 3-->
 
-            <div class="modal fade" id="valoraciones3" tabindex="-1" aria-labelledby="valoraciones3Label" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg modal-fullscreen-sm-down">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="valoraciones3Label">Valoraciones recientes Ciorba</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="container-sm valoraciones">
-                            <div class="row">
-                                <div class="col-md-2">
-                                     <p>Anónimo</p>
-                                     <p class="dias">Hace 6 horas</p>
-                                   </div>
-                                <div class="col-md-6">
-                                     <p class="res"> "Muy bueno, que pena que termine pronto la oferta porque es impresionante." </p>
-                                  </div>
-                                <div class="col-md-4 d-flex justify-content-center">
-                                      <div id="val7"></div>
-                                </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-2">
-                                   <p>Jorge</p>
-                                   <p class="dias">Hace 1 día</p>
-                                 </div>
-                              <div class="col-md-6">
-                                   <p class="res"> "Deliciosas albóndigas con especias, repetiré todas las veces que pueda." </p>
-                                </div>
-                              <div class="col-md-4 d-flex justify-content-center">
-                                  <div id="val8"></div>
-                              </div>
-                          </div>
-                          <div class="row">
-                              <div class="col-md-2">
-                                   <p>Joaquín</p>
-                                   <p class="dias">Hace 1 día</p>
-                                 </div>
-                              <div class="col-md-6">
-                                   <p class="res"> "Muy bueno, además con el carné universitario tuve un buen descuento." </p>
-                                </div>
-                              <div class="col-md-4 d-flex justify-content-center">
-                                  <div id="val9"></div>
-                              </div>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volver</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
 
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -298,7 +344,7 @@
         <!--Fin Carousel-->
 
 
-        <h1 class="anim">información</h1>
+        <h2 class="anim">información</h2>
 
 
 
@@ -323,8 +369,7 @@
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <p>Disfruta de la mejor gastronomía rumana mientras contemplas el maravilloso paisaje de la sierra de Madrid a través
-                                         de nuestros enormes ventanales, una experiencia de lujo que no dejará indiferente a nadie.
+                                    <p>Disfruta de la mejor gastronomía rumana mientras contemplas el maravilloso paisaje de la sierra de Madrid a través de nuestros enormes ventanales, una experiencia de lujo que no dejará indiferente a nadie.
                                     </p>
                                 </div>
                             </div>
@@ -428,63 +473,67 @@
                                     <div id="rating"></div>
                                 </div>
                             </div>
-                    
-                    <!--Reseñas de clientes-->
 
-                    <div class="row">
-                        <div class="col-4">
-                            <p>Reseñas recientes</p>
-                          <div class="list-group" id="list-tab" role="tablist">
-                            <a class="list-group-item list-group-item-action active" id="res1-list" data-bs-toggle="list" href="#res1" role="tab" aria-controls="home">Álvaro</a>
-                            <a class="list-group-item list-group-item-action" id="res2-list" data-bs-toggle="list" href="#res2" role="tab" aria-controls="profile">Joaquín</a>
-                            <a class="list-group-item list-group-item-action" id="res3-list" data-bs-toggle="list" href="#res3" role="tab" aria-controls="messages">Rodrigo</a>
-                          </div>
+                            <!--Reseñas de clientes-->
+
+                            <div class="row">
+                                <div class="col-4">
+                                    <p>Reseñas recientes</p>
+                                    <div class="list-group" id="list-tab" role="tablist">
+                                        <a class="list-group-item list-group-item-action active" id="res1-list" data-bs-toggle="list" href="#res1" role="tab" aria-controls="home">Álvaro</a>
+                                        <a class="list-group-item list-group-item-action" id="res2-list" data-bs-toggle="list" href="#res2" role="tab" aria-controls="profile">Joaquín</a>
+                                        <a class="list-group-item list-group-item-action" id="res3-list" data-bs-toggle="list" href="#res3" role="tab" aria-controls="messages">Rodrigo</a>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="tab-content" id="nav-tabContent">
+                                        <div class="tab-pane fade show active" id="res1" role="tabpanel" aria-labelledby="res1-list">
+                                            <div class="row">
+                                                <div class="col-md-4 dias"> Hace 1 día </div>
+                                                <div class="col-md-8 d-flex justify-content-center">
+                                                    <div id="rating1"></div>
+                                                </div>
+                                            </div>
+                                            <div class="container-md">
+                                                <p class="res">"Maravillosa experiencia, desde luego repetiré, un bonito sitio para pasar el día disfruntando de sabores del este de Europa, gran servicio, muy buen trato y rapidez."
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="res2" role="tabpanel" aria-labelledby="res2-list">
+                                            <div class="row">
+                                                <div class="col-md-4 dias"> Hace 2 días </div>
+                                                <div class="col-md-8 d-flex justify-content-center">
+                                                    <div id="rating2"></div>
+                                                </div>
+                                            </div>
+                                            <div class="container-md">
+                                                <p class="res">"Tuve un problema con uno de mis pedidos y lo solucionaron al momento sin ninguna pega, buena experiencia en general, recomendable."
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="res3" role="tabpanel" aria-labelledby="res3-list">
+                                            <div class="row">
+                                                <div class="col-md-4 dias"> Hace 3 días </div>
+                                                <div class="col-md-8 d-flex justify-content-center">
+                                                    <div id="rating3"></div>
+                                                </div>
+                                            </div>
+                                            <div class="container-md">
+                                                <p class="res">"Todo perfecto, caro, pero merece la pena, además, si eres estudiante, tienes grandes descuentos."
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-8">
-                          <div class="tab-content" id="nav-tabContent">
-                            <div class="tab-pane fade show active" id="res1" role="tabpanel" aria-labelledby="res1-list">
-                                <div class="row">
-                                    <div class="col-md-4 dias"> Hace 1 día </div>
-                                    <div class="col-md-8 d-flex justify-content-center"><div id="rating1"></div></div>
-                                </div>
-                                <div class="container-md">
-                                    <p class="res">"Maravillosa experiencia, desde luego repetiré, un bonito sitio para pasar el día
-                                        disfruntando de sabores del este de Europa, gran servicio, muy buen trato y rapidez."
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="res2" role="tabpanel" aria-labelledby="res2-list">
-                                <div class="row">
-                                    <div class="col-md-4 dias"> Hace 2 días </div>
-                                    <div class="col-md-8 d-flex justify-content-center"><div id="rating2"></div></div>
-                                </div>
-                                <div class="container-md">
-                                    <p class="res">"Tuve un problema con uno de mis pedidos y lo solucionaron al momento sin ninguna pega,
-                                        buena experiencia en general, recomendable."
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="res3" role="tabpanel" aria-labelledby="res3-list">
-                                <div class="row">
-                                    <div class="col-md-4 dias"> Hace 3 días </div>
-                                    <div class="col-md-8 d-flex justify-content-center"><div id="rating3"></div></div>
-                                </div>
-                                <div class="container-md">
-                                    <p class="res">"Todo perfecto, caro, pero merece la pena, además, si eres estudiante, tienes grandes descuentos."
-                                    </p>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
         <!--FIN Acordeon -->
 
-</div>
+    </div>
 </body>
 
 </html>
