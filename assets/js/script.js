@@ -1,13 +1,18 @@
+
+//Neón
+
 $(function() {
     $('.neon').neonText({
-        textColor: 'cyan',
+        textColor: 'aquamarine',
         textSize: '75pt',
         neonHighlight: 'purple',
-        neonHighlightColor: 'blue',
-        neonHighlightHover: '#ff5700',
-        neonFontHover: 'cyan'
+        neonHighlightColor: '#a51cc1',
+        neonHighlightHover: 'red',
+        neonFontHover: 'aquamarine'
     });
 });
+
+//Valoraciones
 
 $(function() {
     $("#rating").rateYo({
@@ -88,9 +93,11 @@ $(function() {
         ratedFill: 'springgreen',
         readOnly: true
     });
+});
 
+//Promociones
 
-
+$(function() {
     var fechaLimite1 = new Date("12/15/2021");
     var fechaLimite2 = new Date("12/30/2021");
     var fechaLimite3 = new Date("11/30/2021");
@@ -138,11 +145,4 @@ $(function() {
     } else {
         document.getElementById("b3").innerHTML = "Promoción válida, quedan " + resta3 + " día/s";
     }
-
-
-
-
-
-
-
 });

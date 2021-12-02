@@ -21,11 +21,13 @@ body {
 .neon {
     padding-top: 40px;
     padding-bottom: 25px;
-    /*Edita esto si se pega mucho el carrousel*/
+    /*Evitar que se pegue mucho el carrousel*/
     font-family: Comic Sans MS, sans-serif;
     transition: text-shadow 0.5s ease 0s;
     border-radius: 10px;
 }
+
+/* Estilo de los botones de las nav pills */
 
 .nav-pills {
     justify-content: center;
@@ -39,16 +41,20 @@ body {
     background-color: green;
 }
 
+/*Estilo de los textos del carrusel */
+
 .carousel-item p {
     color: white;
 }
+
+/*Estilo del acordeón, sus botones y cuerpo */
 
 .accordion {
     padding-top: 15px;
 }
 
 .accordion-body {
-    font-family: Tahoma;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
     font-size: 25px;
     color: white;
     background-color: black;
@@ -76,6 +82,7 @@ body {
     font-size: 30px;
     color: white;
     background: black;
+    font-weight: bolder;
 }
 
 
@@ -98,16 +105,20 @@ body {
 
 .comollegar {
     padding-top: 30px;
+    font-family: 'Trebuchet MS', sans-serif;
 }
 
 p.card-text {
     color: white;
     font-size: 24px;
+    font-weight: 500;
 }
 
 .card-title {
     color: white;
-    font-size: 30px;
+    font-size: 32px;
+    font-family:'Trebuchet MS', sans-serif;
+    font-weight: bold;
 }
 
 
@@ -159,7 +170,7 @@ p.card-text {
 }
 
 
-/* Salir del modal centrado */
+/* Botón de salir del modal centrado */
 
 .modal-footer {
     justify-content: center;
@@ -198,11 +209,11 @@ h2 {
 }
 
 h2:hover {
-    color: red;
+    color: brown;
 }
 
 
-/* Que el header 1 sea responsive */
+/* Que el header 2 (Información) sea responsive */
 
 @media (min-width: 1200px) {
     h2 {
@@ -216,7 +227,40 @@ h2:hover {
     }
 }
 
+/*Dimensiones de las fotos de las ofertas */
+
 .fotos {
     height: 300px;
     width: 4500px;
+}
+
+/*Estilo de las badges de las ofertas */
+
+#b1,#b2, #b3 {
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+
+/*Estilo del precio y los botones de las valoraciones*/
+
+.precio {
+    color: white;
+    font-family: Impact,  sans-serif;
+    font-size: 40px;
+    animation: blinker 2s linear infinite;
+}
+
+.vals {
+    font-size: 30px;
+    font-family: Impact, sans-serif;
+}
+
+hr {
+    color: white;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
