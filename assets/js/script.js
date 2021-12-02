@@ -1,11 +1,11 @@
 $(function() {
     $('.neon').neonText({
-        textColor: 'purple',
+        textColor: 'cyan',
         textSize: '75pt',
-        neonHighlight: 'yellow',
-        neonHighlightColor: 'red',
+        neonHighlight: 'purple',
+        neonHighlightColor: 'blue',
         neonHighlightHover: '#ff5700',
-        neonFontHover: 'magenta'
+        neonFontHover: 'cyan'
     });
 });
 
