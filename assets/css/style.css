@@ -164,6 +164,8 @@ p.card-text {
     font-family: serif;
 }
 
+/*Clase reutilizada para la fuente y letra cursiva */
+
 .res {
     font-family: Tahoma;
     font-style: italic;
@@ -263,4 +265,13 @@ hr {
 a {
     color: inherit;
     text-decoration: none;
+}
+
+/*Estilo del footer */
+
+footer {
+    color: rgb(192, 192, 192);
+    font-style: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    padding-top: 30px;
 }

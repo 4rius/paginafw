@@ -4,7 +4,7 @@
 $(function() {
     $('.neon').neonText({
         textColor: 'aquamarine',
-        textSize: '75pt',
+        textSize: '85pt',
         neonHighlight: 'purple',
         neonHighlightColor: '#a51cc1',
         neonHighlightHover: 'red',
