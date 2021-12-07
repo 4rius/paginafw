@@ -215,11 +215,11 @@ h2:hover {
 }
 
 
-/* Que el header 2 (Información) sea responsive */
+/* Que el header 2 (Información y ofertas) sea responsive */
 
 @media (min-width: 1200px) {
     h2 {
-        font-size: 80px;
+        font-size: 70px;
     }
 }
 
