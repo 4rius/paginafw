@@ -98,9 +98,9 @@ $(function() {
 //Promociones
 
 $(function() {
-    var fechaLimite1 = new Date("12/15/2021");
+    var fechaLimite1 = new Date("12/18/2021");
     var fechaLimite2 = new Date("12/30/2021");
-    var fechaLimite3 = new Date("11/30/2021");
+    var fechaLimite3 = new Date("12/10/2021");
     var fechaHoy = new Date();
 
     var resta1 = Math.floor((fechaLimite1 - fechaHoy) / (1000 * 3600 * 24));
